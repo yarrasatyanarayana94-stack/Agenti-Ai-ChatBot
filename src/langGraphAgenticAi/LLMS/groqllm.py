@@ -11,7 +11,7 @@ class GroqLLM:
     def get_llm_model(self):
         try:
             groq_api_key=self.user_controls.get("GROQ_API_KEY","") 
-            selected_groq_model=self.user_controls.get("selected_groq_model")
+            selected_groq_model=self.user_controls.get("selected_groq_model","")
 
             env_key = os.getenv("GROQ_API_KEY", "")
             if not groq_api_key and not env_key:
