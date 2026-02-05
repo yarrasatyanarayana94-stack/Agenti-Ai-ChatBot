@@ -9,4 +9,4 @@ class BsicChabotNode:
         """
         Represent the structure of the state used in grap
         """
-        return {"messages":self.llm.invkoke(state['messages'])}
+        return {"messages":self.llm.invoke(state['messages'])}

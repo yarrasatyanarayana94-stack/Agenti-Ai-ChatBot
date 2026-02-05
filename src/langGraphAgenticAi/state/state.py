@@ -6,4 +6,4 @@ class State(TypedDict):
     """
     Docstring for State
     """
-    messages:Annotated[list,add_messages]
+    messages:Annotated[List,add_messages]
